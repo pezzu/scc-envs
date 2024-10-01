@@ -1,7 +1,0 @@
-{
-    "name": "QA86-02",
-    "description": "Lab5.0 internal QA environment (one more)",
-    "configuration": {
-        "app": "v0.1.9"
-    }
-}
