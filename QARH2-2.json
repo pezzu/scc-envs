@@ -1,0 +1,7 @@
+{
+    "name": "QARH2-02",
+    "description": "Lab5.0 internal QA environment",
+    "configuration": {
+        "app": "v0.1.11"
+    }
+}
