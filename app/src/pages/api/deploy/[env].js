@@ -12,7 +12,6 @@ export default async function handler(req, res) {
             body: JSON.stringify({ ref: "main", inputs: { environment: req.query.env } }),
         }
     );
-    // console.log("GH Action response: " + response.ok);
-    console.log(response);
+    console.log("GH Action response: " + response.ok);
     res.status(200).json({ ok: true });
 }

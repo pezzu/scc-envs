@@ -1,7 +1,7 @@
 export default async function handler(req, res) {
     console.log("Deleting " + req.query.env);
     const response = await fetch(
-        `https://api.github.com/repos/pezzu/scc-infra/actions/workflows/delete.yaml/dispatches`,
+        `https://api.github.com/repos/pezzu/scc-infra/actions/workflows/destroy.yaml/dispatches`,
         {
             method: "POST",
             headers: {
