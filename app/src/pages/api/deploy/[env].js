@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-    console.log("Deploying" + req.query.env);
+    console.log("Deploying " + req.query.env);
     const response = await fetch(
         `https://api.github.com/repos/pezzu/scc-infra/actions/workflows/deploy.yaml/dispatches`,
         {
@@ -12,6 +12,7 @@ export default async function handler(req, res) {
             body: JSON.stringify({ ref: "main", inputs: { environment: req.query.env } }),
         }
     );
-    console.log("GH Action response: " + response.ok);
+    // console.log("GH Action response: " + response.ok);
+    console.log(response);
     res.status(200).json({ ok: true });
 }
